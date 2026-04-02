@@ -22,7 +22,8 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
 
   const pin = getValueFromInput("cashout-pin");
   if (pin === "1234") {
-    alert('cashout successfull');
+    alert(`cashout Successful from ${cashoutNumber}  at ${new Date()}`);
+
     setBalance(newBalance);
     //1- history container ke shore niye ashbo
     const history = document.getElementById('history-container');
